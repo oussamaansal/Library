@@ -1,0 +1,23 @@
+{% extends "library/layout.html" %} {% load static%} {% block body %}
+<div class='button-group ADD'>
+  <button class="btnAdd">ADD</button>
+</div>
+ 
+<div class="card adminBooks">
+  <div class="card-image">
+      <img src="https://cdn.pixabay.com/photo/2014/09/05/18/32/old-books-436498_1280.jpg" alt="Card Image">
+  </div>
+  <div class="card-details">
+      <h6>Book 1 </h6>
+      <p>Author 1</p>
+  </div>
+  <div class="card-buttons">
+      <button class="btnEdit" id='btnEdit'>Edit</button>
+      <button class="btnDelete">Delete</button>
+  </div>
+</div>
+
+{% endblock %} {% block script%}
+
+<script src="{% static 'js/admin.js' %}"></script>
+{%endblock%}
